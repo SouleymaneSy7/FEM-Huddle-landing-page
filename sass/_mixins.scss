@@ -1,0 +1,86 @@
+@use 'fonts';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin flex-justify-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin navigation--btn {
+  border: none;
+  outline: none;
+
+  font-family: var(--font-poppins);
+  font-size: 13px;
+  font-weight: var(--font-bold);
+  color: var(--very-dark-cyan);
+  
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba($color: #000, $alpha: 0.1);
+
+  padding: 5px 30px;
+  transition: 300ms opacity ease;
+  cursor: pointer;
+}
+
+
+@mixin main--btn {
+  border: none;
+  outline: none;
+
+  font-family: var(--font-open-sans);
+  font-size: 13px;
+  font-weight: var(--font-semi-bold);
+  color: var(--white);
+  letter-spacing: 1px;
+
+  background-color: var(--pink);
+  border-radius: 30px;
+  box-shadow: 0 5px 10px rgba($color: hsl(322, 100%, 66%), $alpha: 0.4);
+
+  padding: 15px 60px;
+  transition: 300ms opacity ease;
+  cursor: pointer;
+}
